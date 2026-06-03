@@ -1,0 +1,229 @@
+/* ============================================
+   BANNER CAROUSEL STYLES
+   ============================================ */
+
+.banner-section {
+  padding-top: var(--space-6);
+}
+
+.banner-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: var(--space-2);
+  height: 235px;
+}
+
+/* ---- Carousel ---- */
+.banner-carousel {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 100%;
+}
+
+.banner-carousel__track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.banner-carousel__slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-10) var(--space-12);
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-carousel__content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-carousel__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-white);
+  margin-bottom: var(--space-2);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  letter-spacing: -0.5px;
+}
+
+.banner-carousel__subtitle {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-5);
+}
+
+.banner-carousel__cta {
+  background: var(--bg-white);
+  color: var(--shopee-orange);
+  font-weight: 600;
+  padding: var(--space-2) var(--space-6);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.banner-carousel__cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- Decorative Circles ---- */
+.banner-carousel__decoration {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 300px;
+  height: 300px;
+}
+
+.banner-carousel__circle {
+  position: absolute;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.banner-carousel__circle--1 {
+  width: 200px;
+  height: 200px;
+  right: 20px;
+  top: 20px;
+}
+
+.banner-carousel__circle--2 {
+  width: 150px;
+  height: 150px;
+  right: -20px;
+  top: 80px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.banner-carousel__circle--3 {
+  width: 100px;
+  height: 100px;
+  right: 60px;
+  top: -10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ---- Navigation Arrows ---- */
+.banner-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.15);
+  color: var(--text-white);
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  z-index: 3;
+  transition: background var(--transition-fast);
+  opacity: 0;
+}
+
+.banner-carousel:hover .banner-carousel__arrow {
+  opacity: 1;
+}
+
+.banner-carousel__arrow:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.banner-carousel__arrow--prev {
+  left: 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.banner-carousel__arrow--next {
+  right: 0;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+/* ---- Dots ---- */
+.banner-carousel__dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 3;
+}
+
+.banner-carousel__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.banner-carousel__dot.active {
+  background: var(--bg-white);
+  width: 20px;
+  border-radius: 4px;
+}
+
+/* ---- Side Panel ---- */
+.banner-side-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--bg-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.banner-side-panel__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  background: var(--bg-white);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.banner-side-panel__item:hover {
+  background: #FFF5F0;
+  transform: scale(1.02);
+}
+
+.banner-side-panel__icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  font-size: 18px;
+}
+
+.banner-side-panel__label {
+  font-size: 10px;
+  color: var(--text-primary);
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 500;
+}

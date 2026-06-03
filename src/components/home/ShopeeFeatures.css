@@ -1,0 +1,73 @@
+.shopee-features {
+  margin-top: var(--space-4);
+}
+
+.shopee-features__grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  background: var(--bg-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+}
+
+.shopee-features__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-3);
+  border-right: 1px solid var(--border-light);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.shopee-features__item:last-child {
+  border-right: none;
+}
+
+.shopee-features__item:hover {
+  background: #FFF8F5;
+  transform: translateY(-1px);
+}
+
+.shopee-features__icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.shopee-features__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.shopee-features__label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shopee-features__sublabel {
+  font-size: 10px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .shopee-features__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .shopee-features__item:nth-child(4) {
+    border-right: none;
+  }
+}

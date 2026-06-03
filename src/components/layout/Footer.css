@@ -1,0 +1,135 @@
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+.footer {
+  background: var(--bg-footer);
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: auto;
+}
+
+.footer__top {
+  padding: var(--space-10) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-6);
+}
+
+.footer__section-title {
+  color: var(--text-white);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-5);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-fast);
+  display: inline-block;
+}
+
+.footer__link:hover {
+  color: var(--text-white);
+}
+
+/* ---- Payment & Shipping Badges ---- */
+.footer__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.footer__badge {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-fast);
+}
+
+.footer__badge:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---- Social ---- */
+.footer__social-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer__social-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer__social-item:hover {
+  color: var(--text-white);
+}
+
+.footer__social-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}
+
+/* ---- Bottom Bar ---- */
+.footer__bottom {
+  padding: var(--space-6) 0;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.footer__country {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__bottom-inner {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+}

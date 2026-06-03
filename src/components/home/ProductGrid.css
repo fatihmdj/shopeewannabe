@@ -1,0 +1,67 @@
+/* ============================================
+   PRODUCT GRID (Daily Discover) STYLES
+   ============================================ */
+
+.product-grid-section {
+  margin-top: var(--space-6);
+}
+
+.product-grid-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5) 0;
+}
+
+.product-grid-section__title {
+  color: var(--shopee-orange);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.product-grid-section__load-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-6) 0;
+}
+
+.product-grid-section__load-more-btn {
+  background: var(--bg-white);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-default);
+  padding: var(--space-3) var(--space-12);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  min-width: 300px;
+}
+
+.product-grid-section__load-more-btn:hover {
+  background: var(--shopee-orange);
+  color: var(--text-white);
+  border-color: var(--shopee-orange);
+  box-shadow: 0 2px 8px rgba(238, 77, 45, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

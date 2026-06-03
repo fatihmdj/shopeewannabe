@@ -1,0 +1,211 @@
+/* ============================================
+   FLASH SALE STYLES
+   ============================================ */
+
+.flash-sale {
+  margin-top: var(--space-4);
+}
+
+.flash-sale__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-white);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  border: 1px solid var(--border-light);
+  border-bottom: 2px solid var(--shopee-orange);
+}
+
+.flash-sale__title-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.flash-sale__icon {
+  font-size: 24px;
+  animation: flash 1.5s ease-in-out infinite;
+}
+
+.flash-sale__title {
+  color: var(--shopee-orange);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* ---- Timer ---- */
+.flash-sale__timer {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.flash-sale__timer-box {
+  background: var(--text-primary);
+  color: var(--text-white);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  min-width: 28px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.flash-sale__timer-sep {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: 0 1px;
+}
+
+.flash-sale__see-all {
+  color: var(--shopee-orange);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  transition: opacity var(--transition-fast);
+}
+
+.flash-sale__see-all:hover {
+  opacity: 0.8;
+}
+
+/* ---- Container ---- */
+.flash-sale__container {
+  position: relative;
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  padding: var(--space-4);
+}
+
+.flash-sale__products {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--space-2);
+}
+
+/* ---- Scroll Buttons ---- */
+.flash-sale__scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-card);
+}
+
+.flash-sale__scroll-btn:hover {
+  background: var(--bg-white);
+  color: var(--shopee-orange);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.flash-sale__scroll-btn--left {
+  left: -4px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.flash-sale__scroll-btn--right {
+  right: -4px;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+/* ---- Card ---- */
+.flash-sale__card {
+  flex: 0 0 150px;
+  scroll-snap-align: start;
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: all var(--transition-fast);
+}
+
+.flash-sale__card:hover {
+  border-color: var(--shopee-orange);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.flash-sale__card-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.flash-sale__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flash-sale__card-discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--shopee-orange);
+  color: var(--text-white);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 0 0 0 var(--radius-md);
+}
+
+.flash-sale__card-info {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.flash-sale__card-price {
+  color: var(--text-price);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ---- Progress Bar ---- */
+.flash-sale__card-progress {
+  height: 16px;
+  background: rgba(238, 77, 45, 0.15);
+  border-radius: 99px;
+  overflow: hidden;
+  position: relative;
+}
+
+.flash-sale__card-progress-bar {
+  height: 100%;
+  background: var(--shopee-gradient);
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60%;
+  animation: progressFill 1s ease-out;
+}
+
+.flash-sale__card-progress-text {
+  color: var(--text-white);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

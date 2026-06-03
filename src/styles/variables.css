@@ -1,0 +1,99 @@
+/* ============================================
+   SHOPEE DESIGN TOKENS
+   Reverse-engineered from shopee.co.id
+   ============================================ */
+
+:root {
+  /* ---- Brand Colors ---- */
+  --shopee-orange: #EE4D2D;
+  --shopee-orange-dark: #D73211;
+  --shopee-orange-light: #FF6633;
+  --shopee-red: #D0011B;
+  --shopee-gradient: linear-gradient(to right, #F53D2D, #FF6633);
+  --shopee-gradient-dark: linear-gradient(to right, #D73211, #EE4D2D);
+
+  /* ---- Background Colors ---- */
+  --bg-primary: #F5F5F5;
+  --bg-white: #FFFFFF;
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+  --bg-header: linear-gradient(to bottom, #F53D2D, #FF6633);
+  --bg-footer: #1A1A2E;
+  --bg-footer-dark: #16162A;
+
+  /* ---- Text Colors ---- */
+  --text-primary: #222222;
+  --text-secondary: #757575;
+  --text-tertiary: #BDBDBD;
+  --text-white: #FFFFFF;
+  --text-price: #EE4D2D;
+  --text-price-original: #BDBDBD;
+  --text-link: #08f;
+  --text-on-header: rgba(255, 255, 255, 0.9);
+
+  /* ---- Border Colors ---- */
+  --border-light: #E8E8E8;
+  --border-default: #D5D5D5;
+  --border-active: #EE4D2D;
+  --border-error: #FF424F;
+
+  /* ---- Shadows ---- */
+  --shadow-card: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-card-hover: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+  --shadow-dropdown: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-header: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-modal: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+  /* ---- Typography ---- */
+  --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-size-xs: 0.625rem;     /* 10px */
+  --font-size-sm: 0.75rem;      /* 12px */
+  --font-size-base: 0.875rem;   /* 14px */
+  --font-size-md: 1rem;         /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;      /* 24px */
+  --font-size-3xl: 2rem;        /* 32px */
+
+  /* ---- Spacing ---- */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+
+  /* ---- Layout ---- */
+  --max-width: 1200px;
+  --header-height: 84px;
+  --header-top-height: 34px;
+  --header-main-height: 50px;
+  --sidebar-width: 190px;
+  --footer-height: auto;
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 50%;
+
+  /* ---- Transitions ---- */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.35s ease;
+
+  /* ---- Z-Index ---- */
+  --z-dropdown: 100;
+  --z-header: 200;
+  --z-modal-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+
+  /* ---- Star Rating ---- */
+  --star-filled: #FFCE3D;
+  --star-empty: #D5D5D5;
+}

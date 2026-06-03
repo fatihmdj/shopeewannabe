@@ -1,0 +1,138 @@
+/* ============================================
+   CART PAGE STYLES
+   ============================================ */
+
+.cart-page { padding-bottom: 100px; }
+.cart-page__title {
+  font-size: var(--font-size-xl); font-weight: 500; color: var(--text-primary);
+  padding: var(--space-4) 0; text-transform: uppercase; letter-spacing: 0.5px;
+}
+
+/* Empty */
+.cart-empty {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: var(--space-12); background: var(--bg-white); border-radius: var(--radius-md);
+  text-align: center; box-shadow: var(--shadow-card);
+}
+.cart-empty__icon { font-size: 80px; margin-bottom: var(--space-4); }
+.cart-empty h3 { font-size: var(--font-size-lg); font-weight: 500; color: var(--text-primary); margin-bottom: var(--space-2); }
+.cart-empty p { color: var(--text-secondary); margin-bottom: var(--space-6); }
+.cart-empty__btn {
+  background: var(--shopee-orange); color: white; padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-sm); font-weight: 500; transition: background var(--transition-fast);
+}
+.cart-empty__btn:hover { background: var(--shopee-orange-dark); }
+
+/* Checkbox */
+.cart-checkbox {
+  display: flex; align-items: center; gap: var(--space-3); cursor: pointer;
+}
+.cart-checkbox input[type="checkbox"] {
+  width: 18px; height: 18px; accent-color: var(--shopee-orange); cursor: pointer;
+}
+
+/* Header Row */
+.cart-header {
+  display: grid; grid-template-columns: 4fr 1.5fr 1.5fr 1.5fr 1fr; align-items: center;
+  background: var(--bg-white); padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md); margin-bottom: var(--space-3);
+  box-shadow: var(--shadow-card); font-size: var(--font-size-base); color: var(--text-secondary);
+}
+.cart-header__col { text-align: center; }
+.cart-header__col--action { text-align: right; }
+
+/* Shop Group */
+.cart-shop {
+  background: var(--bg-white); border-radius: var(--radius-md);
+  margin-bottom: var(--space-3); box-shadow: var(--shadow-card); overflow: hidden;
+}
+.cart-shop__header {
+  padding: var(--space-4) var(--space-5); border-bottom: 1px solid var(--border-light);
+}
+.cart-shop__name { font-weight: 600; font-size: var(--font-size-base); display: flex; align-items: center; gap: var(--space-2); }
+.cart-shop__badge {
+  font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 2px; color: white;
+}
+.cart-shop__badge--mall { background: linear-gradient(90deg, #D0011B, #EE4D2D); }
+
+/* Cart Item */
+.cart-item {
+  display: grid; grid-template-columns: 4fr 1.5fr 1.5fr 1.5fr 1fr; align-items: center;
+  padding: var(--space-4) var(--space-5); border-bottom: 1px solid var(--border-light);
+}
+.cart-item:last-child { border-bottom: none; }
+
+.cart-item__product { display: flex; align-items: center; gap: var(--space-3); }
+.cart-item__image-link { flex-shrink: 0; }
+.cart-item__image {
+  width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+}
+.cart-item__details { flex: 1; min-width: 0; }
+.cart-item__name {
+  font-size: var(--font-size-base); color: var(--text-primary); display: block;
+  transition: color var(--transition-fast);
+}
+.cart-item__name:hover { color: var(--shopee-orange); }
+.cart-item__variant {
+  font-size: var(--font-size-sm); color: var(--text-secondary); margin-top: var(--space-1);
+  display: block;
+}
+
+.cart-item__price { text-align: center; }
+.cart-item__price-original {
+  text-decoration: line-through; color: var(--text-tertiary);
+  font-size: var(--font-size-sm); display: block;
+}
+.cart-item__price-current { color: var(--text-primary); font-size: var(--font-size-base); }
+
+.cart-item__quantity { display: flex; align-items: center; justify-content: center; gap: 0; }
+.cart-qty-btn {
+  width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border-default); background: var(--bg-white);
+  cursor: pointer; font-size: 16px; transition: all var(--transition-fast);
+}
+.cart-qty-btn:hover:not(:disabled) { border-color: var(--shopee-orange); color: var(--shopee-orange); }
+.cart-qty-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.cart-qty-value {
+  width: 40px; height: 28px; display: flex; align-items: center; justify-content: center;
+  border-top: 1px solid var(--border-default); border-bottom: 1px solid var(--border-default);
+  font-size: var(--font-size-base);
+}
+
+.cart-item__total { text-align: center; }
+.cart-item__total-price { color: var(--shopee-orange); font-weight: 500; font-size: var(--font-size-base); }
+
+.cart-item__actions { text-align: right; }
+.cart-item__delete {
+  background: none; border: none; color: var(--text-secondary);
+  cursor: pointer; font-size: var(--font-size-base);
+  transition: color var(--transition-fast);
+}
+.cart-item__delete:hover { color: var(--shopee-orange); }
+
+/* Summary Bar */
+.cart-summary {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: var(--z-header);
+  background: var(--bg-white); box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
+  padding: var(--space-4) var(--space-6); display: flex; align-items: center;
+  gap: var(--space-4);
+}
+.cart-summary__select-all { font-size: var(--font-size-base); }
+.cart-summary__delete {
+  background: none; border: none; color: var(--text-secondary);
+  cursor: pointer; font-size: var(--font-size-base);
+  transition: color var(--transition-fast);
+}
+.cart-summary__delete:hover { color: var(--shopee-orange); }
+.cart-summary__right { margin-left: auto; display: flex; align-items: center; gap: var(--space-5); }
+.cart-summary__savings { color: var(--shopee-orange); font-size: var(--font-size-sm); }
+.cart-summary__total { display: flex; align-items: center; gap: var(--space-2); }
+.cart-summary__total-label { font-size: var(--font-size-base); color: var(--text-primary); }
+.cart-summary__total-price { font-size: var(--font-size-2xl); font-weight: 500; color: var(--shopee-orange); }
+.cart-summary__checkout-btn {
+  background: var(--shopee-orange); color: white; padding: var(--space-3) var(--space-10);
+  border-radius: var(--radius-sm); font-size: var(--font-size-md); font-weight: 500;
+  transition: background var(--transition-fast);
+}
+.cart-summary__checkout-btn:hover { background: var(--shopee-orange-dark); }
