@@ -1,8 +1,8 @@
-# 🛍️ Shopee Web Frontend Clone (Vite + React + Vanilla CSS)
+# Shopee Web Frontend Clone (Vite + React + Vanilla CSS)
 
 Replikasi antarmuka fungsional dari platform e-commerce **Shopee Indonesia**. Proyek ini dibuat menggunakan **Vite**, **React**, dan **Vanilla CSS** dengan fokus pada presisi pixel, mikro-animasi, serta fungsionalitas dinamis menggunakan data tiruan (mock data).
 
-## 🚀 Fitur Utama
+## Fitur Utama
 
 1. **Sistem Desain & Layout**:
    * **Vertical Stacked Navigation Bar**: Bagian atas (*Seller Centre, Notifikasi, Bantuan, Login*) dan bagian pencarian diintegrasikan dalam satu komponen dengan ketinggian dinamis yang menyesuaikan konten secara otomatis.
@@ -28,7 +28,7 @@ Replikasi antarmuka fungsional dari platform e-commerce **Shopee Indonesia**. Pr
    * Form login menggunakan Email/Nomor HP.
    * Fitur simulasi login menggunakan pemindaian **QR Code** interaktif.
 
-## 🛠️ Cara Menjalankan Proyek
+## Cara Menjalankan Proyek
 
 ### Prasyarat
 Pastikan Anda memiliki [Node.js](https://nodejs.org/) terinstal di komputer Anda.
@@ -52,5 +52,5 @@ Pastikan Anda memiliki [Node.js](https://nodejs.org/) terinstal di komputer Anda
    ```
 5. Buka tautan lokal yang muncul (default: `http://localhost:5173`) di browser Anda.
 
-## 📄 Lisensi
+## Lisensi
 Proyek ini dibuat untuk tujuan pembelajaran dan analisis rekayasa perangkat lunak (reverse engineering).
