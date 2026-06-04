@@ -1,0 +1,22 @@
+# Environment variables (contains secrets)
+.env
+
+# SQLite database file
+*.db
+
+# Go binary
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go test binary
+*.test
+
+# Go coverage
+*.out
+
+# IDE
+.idea/
+.vscode/
