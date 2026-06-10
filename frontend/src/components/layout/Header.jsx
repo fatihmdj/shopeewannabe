@@ -111,7 +111,7 @@ const Header = () => {
                 <input
                   type="text"
                   className="header__search-input"
-                  placeholder="Cari di Shopee"
+                  placeholder="Cari di Shopoku"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onFocus={() => setIsSearchFocused(true)}
